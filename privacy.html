@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - NOVA VORTEX YouTube</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 16px; line-height: 1.6; color: #1d1d1f; background: #fff; }
+  code { background: #f2f2f2; padding: 1px 4px; border-radius: 3px; word-break: break-all; }
+  footer { margin-top: 48px; font-size: 0.9rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p><strong>NOVA VORTEX YouTube</strong> — last updated: 30 September 2026</p>
+
+<h2>1. Who we are</h2>
+<p>NOVA VORTEX YouTube ("the application") is a personal, self-hosted tool operated by Loïc Bergoin
+("the operator") to manage his own YouTube channels. It runs only on the operator's own computer.
+It is not a public service: its only user is the operator, signing in with the Google accounts that own
+his channels.</p>
+
+<h2>2. Google user data the application accesses</h2>
+<p>The application uses Google OAuth and the YouTube API Services. With the operator's consent, it requests
+these permissions (scopes):</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.force-ssl</code> — to upload videos to the operator's own
+    channel, update their title, description, privacy status and scheduled publication date, set their thumbnail
+    and captions, and read the identity of the connected channel.</li>
+  <li><code>https://www.googleapis.com/auth/youtube.readonly</code> and
+    <code>https://www.googleapis.com/auth/yt-analytics.readonly</code> — to read, without modifying anything,
+    the list and statistics (views, watch time and similar metrics) of the operator's own channels.</li>
+</ul>
+<p>The data accessed through these permissions is: the channel identifier and title; the identifiers, status,
+metadata and scheduled publication dates of the videos the application uploads or reads; and the aggregated
+statistics of the operator's own channels. The application does not access Gmail, contacts, files or any other
+Google service, and it does not access any private data of other YouTube users.</p>
+
+<h3>Public YouTube data (no sign-in)</h3>
+<p>Separately, for topic research, the application uses the YouTube Data API with an API key (no Google
+sign-in) to search <em>public</em> videos: public titles, channel names, durations and view counts. Names of
+people, places or events taken from public video titles may be used as search queries with a web search
+provider (Tavily) to check that a topic is documented by independent sources.</p>
+
+<h2>3. How the data is used</h2>
+<p>The data is used only to publish and manage the operator's own videos, to show the operator the
+performance of his own channels, and to research topics for future videos. It is not used for advertising,
+it is not sold, and it is not used to build profiles of anyone.</p>
+
+<h2>4. Storage and security</h2>
+<ul>
+  <li>OAuth refresh tokens are stored only on the operator's computer, in local environment (<code>.env</code>)
+    files that are never published or shared. Short-lived access tokens are kept in memory only and are never
+    written to disk.</li>
+  <li>Channel, video, statistics and research data retrieved from YouTube is stored only in local files and
+    databases on the operator's computer. The application has no server and no cloud database of its own.</li>
+</ul>
+
+<h2>5. Sharing</h2>
+<p>Data obtained with the operator's Google sign-in (section 2: the operator's channels, videos and
+statistics) is not shared with, transferred to, or sold to any third party; it is exchanged only with
+Google's own servers. The only YouTube-derived information sent elsewhere is the search terms described
+under "Public YouTube data", sent to the web search provider.</p>
+
+<h2>6. Retention and deletion</h2>
+<ul>
+  <li>OAuth tokens are kept until the operator revokes the application's access or deletes them from the
+    local files.</li>
+  <li>Records of uploaded videos, statistics history and research results are kept in local files with no
+    automatic expiry, for as long as the operator uses the application. They are removed by deleting those
+    local files.</li>
+  <li>Videos uploaded to YouTube stay on YouTube until the channel owner deletes them in YouTube.</li>
+  <li>Access can be revoked at any time at
+    <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.
+    Once access is revoked, the application can no longer access the account.</li>
+</ul>
+
+<h2>7. YouTube and Google policies</h2>
+<p>The application uses the YouTube API Services. By using it, you also agree to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+The application's use of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, the updated version is published on this page with a new date.</p>
+
+<h2>9. Contact</h2>
+<p>Loïc Bergoin — bergoinloic@gmail.com</p>
+
+<footer><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a></footer>
+</body>
+</html>
